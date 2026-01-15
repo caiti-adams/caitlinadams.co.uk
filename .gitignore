@@ -22,3 +22,6 @@ dist/
 # logs
 *.log
 .edgeone/
+
+# Local Netlify folder
+.netlify

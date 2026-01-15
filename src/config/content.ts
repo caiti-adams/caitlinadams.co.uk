@@ -1,16 +1,16 @@
 export const siteConfig = {
-  name: "Your Portfolio",
-  title: "Someone's Portfolio",
+  name: "Caitlin Adams",
+  title: "Caitlin Adams - Portfolio",
   description: "A showcase of my work and thoughts",
   social: {
-    github: "https://github.com/tomcomtang/astro-multiplepage-portfolio",
-    twitter: "https://x.com/astrodotbuild",
-    email: "mailto:364786053@qq.com",
+    github: "https://github.com/caitlinadams",
+    twitter: "https://x.com/caitlinadams",
+    email: "mailto:hello@caitlinadams.co.uk",
   },
 };
 
 export const homeContent = {
-  title: "Hello, I'm Your Name",
+  title: "Hello, I'm Caitlin Adams",
   description:
     "A passionate frontend developer with a keen eye for design and a love for creating beautiful, functional web experiences.",
   buttons: {
@@ -24,14 +24,14 @@ export const homeContent = {
     },
   },
   images: {
-    light: "https://multiplepage-portfolio.edgeone.app/assets/images/tech-background-light.svg",
+    light: "/assets/images/tech-background.svg",
     dark: "/assets/images/tech-background-dark.svg",
   },
 };
 
 export const aboutContent = {
   meta: {
-    title: "About - Your Portfolio",
+    title: "About - Caitlin Adams",
     description: "Learn more about my background, skills, and experience",
   },
   title: "About Me",
@@ -79,17 +79,17 @@ export const aboutContent = {
   connect: {
     title: "Let's Connect",
     description:
-      "Feel free to reach out if you want to collaborate or just say hi! You can find us on social media or drop us an",
+      "Feel free to reach out if you want to collaborate or just say hi! You can find me on social media or drop me an",
     email: {
       text: "email",
-      href: "mailto:364786053@qq.com",
+      href: "mailto:hello@caitlinadams.co.uk",
     },
   },
 };
 
 export const projectsContent = {
   meta: {
-    title: "Projects - Your Portfolio",
+    title: "Projects - Caitlin Adams",
     description: "Showcase of my best work and projects",
   },
   title: "Our Projects",
