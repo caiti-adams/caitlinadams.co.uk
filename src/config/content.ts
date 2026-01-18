@@ -12,7 +12,7 @@ export const siteConfig = {
 export const homeContent = {
   title: "Hello, I'm Caitlin Adams",
   description:
-    "A creative <insert noun here> with a passion for storytelling and film.",
+    "A creative <em>&lt;insert noun here&gt;</em> with a passion for storytelling and film.",
   buttons: {
     about: {
       text: "View About",
@@ -36,7 +36,7 @@ export const aboutContent = {
   },
   title: "About Me",
   description:
-    "I am an aspiring filmmaker and actor with a special interest in character-led storytelling and all things creative. My work is driven by a complete passion for film, and how emotion, identity, and psychology can be expressed through various visual techniques. I am especially drawn to horror as a genre, and how it can be used as a form of dark expression and social commentary.\n\nI'm particularly inspired by female storytellers telling feminine stories within typically male-dominated genres and industries, and hope to grow into one of those very women.\n\nIn 2023, I moved from South Africa to England, the place of my birth, in order to search for more opportunities within my chosen creative fields. The move was far from easy, but it taught me a lot about myself, as both a creative and as a human being. I love filmmaking, acting, writing, and visual arts, and hope to continue my work in these fields, and display it on here.",
+    "I am an aspiring filmmaker and actor with a special interest in character-led storytelling and all things creative. My work is driven by a complete passion for film, and how emotion, identity, and psychology can be expressed through various visual techniques. I am especially drawn to horror as a genre, and how it can be used as a form of dark expression and social commentary.\n\nI'm particularly inspired by female storytellers telling feminine stories within typically male-dominated genres and industries, and hope to grow into one of those very women.\n\nIn 2023, I moved from South Africa to England, the place of my birth, in order to search for more opportunities within my chosen creative fields. The move was far from easy, but it taught me a lot about myself, as both a creative and as a human being. I love filmmaking, acting, writing, and visual arts, and aim to continue my work in these fields, and display it on here.",
   skills: [
     "Next.js",
     "React",
