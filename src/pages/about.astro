@@ -81,10 +81,6 @@ import { aboutContent } from "../config/content.ts";
     <div class="relative flex-grow flex flex-col">
       <div class="absolute inset-0 z-0">
         <div
-          class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark"
-        >
-        </div>
-        <div
           class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"
         >
         </div>
@@ -103,12 +99,14 @@ import { aboutContent } from "../config/content.ts";
             {aboutContent.title}
           </h2>
           <div class="flex flex-col md:flex-row gap-8 mt-3 sm:mt-4 lg:mt-6">
-            <div class="w-full flex flex-col">
-              <p
-                class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-              >
-                {aboutContent.description}
-              </p>
+            <div class="w-full flex flex-col space-y-4">
+              {aboutContent.description.split('\n\n').map((paragraph) => (
+                <p
+                  class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+                >
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </div>
