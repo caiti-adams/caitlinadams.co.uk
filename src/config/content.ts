@@ -3,24 +3,24 @@ export const siteConfig = {
   title: "Caitlin Adams - Portfolio",
   description: "A showcase of my work and thoughts",
   social: {
-    github: "https://github.com/caitlinadams",
-    twitter: "https://x.com/caitlinadams",
-    email: "mailto:hello@caitlinadams.co.uk",
+    github: "https://github.com/caiti_adams",
+    instagram: "https://instagram.com/caiti_whatshername",
+    email: "mailto:caitlinadams.za@gmail.com",
   },
 };
 
 export const homeContent = {
   title: "Hello, I'm Caitlin Adams",
   description:
-    "A passionate frontend developer with a keen eye for design and a love for creating beautiful, functional web experiences.",
+    "A creative <insert noun here> with a passion for storytelling and film.",
   buttons: {
     about: {
       text: "View About",
       href: "/about/",
     },
     posts: {
-      text: "Read Posts",
-      href: "/posts/",
+      text: "Go to Projects",
+      href: "/projects/",
     },
   },
   images: {
@@ -36,7 +36,7 @@ export const aboutContent = {
   },
   title: "About Me",
   description:
-    "This is where you can introduce yourself or your company. Share your story, mission, and values. Explain what makes you unique and why people should be interested in your work. Keep it concise but engaging.",
+    "I am an aspiring filmmaker and actor.",
   skills: [
     "Next.js",
     "React",
@@ -92,30 +92,17 @@ export const projectsContent = {
     title: "Projects - Caitlin Adams",
     description: "Showcase of my best work and projects",
   },
-  title: "Our Projects",
+  title: "My Projects",
   description:
     "Here you can showcase your best work. Each project should include a brief description, the technologies used, and any notable achievements. This helps potential clients or employers understand your capabilities.",
-  projects: [
+  current: [],
+  concepts: [
     {
-      title: "Project One",
+      title: "Heartless",
       description:
-        "A brief description of your first project. Explain what it does and what technologies you used.",
-      image: "/assets/images/projects/project1.jpg",
-      href: "#",
-    },
-    {
-      title: "Project Two",
-      description:
-        "Describe your second project here. Highlight the key features and your role in development.",
-      image: "/assets/images/projects/project2.jpg",
-      href: "#",
-    },
-    {
-      title: "Project Three",
-      description:
-        "Share details about your third project. What problems did it solve? What was the outcome?",
-      image: "/assets/images/projects/project3.png",
-      href: "#",
+        "A hyper-feminine psycholgical horror exploring the cost of perfection.",
+      image: "/assets/images/projects/heartless_icon.jpg",
+      href: "/projects/heartless/",
     },
   ],
 };

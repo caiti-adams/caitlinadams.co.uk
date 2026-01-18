@@ -98,100 +98,69 @@ import { aboutContent } from "../config/content.ts";
       <section class="relative z-20 w-[896px] mx-auto mt-24 mb-12">
         <div class="relative z-20 w-full mx-auto lg:mx-0">
           <h2
-            class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-3xl lg:text-4xl"
+            class="text-2xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-3xl lg:text-4xl"
           >
             {aboutContent.title}
           </h2>
           <div class="flex flex-col md:flex-row gap-8 mt-3 sm:mt-4 lg:mt-6">
-            <div class="w-full md:w-1/2 flex flex-col">
+            <div class="w-full flex flex-col">
               <p
                 class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
               >
                 {aboutContent.description}
               </p>
-              <div class="mt-auto pt-4 flex flex-wrap gap-2">
-                {
-                  aboutContent.skills.map((skill) => (
-                    <span class="px-3 py-1 text-sm bg-neutral-200 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-200 rounded-full">
-                      {skill}
-                    </span>
-                  ))
-                }
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 flex justify-end">
-              <div class="relative w-[360px] h-[360px]">
-                <img
-                  src="/assets/images/in-preproduction.png"
-                  alt={aboutContent.image.alt}
-                  class="object-cover rounded-xl w-full h-full"
-                />
-              </div>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col md:flex-row mt-20">
-          <div class="flex-1">
-            <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">
-              {aboutContent.experience.title}
-            </h2>
-            <div class="py-10">
-              {
-                aboutContent.experience.items.map((item) => (
-                  <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-                    <div class="relative flex flex-col justify-start pl-12">
-                      <div class="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700">
-                        <svg
-                          class="w-8 h-8 text-neutral-700 dark:text-neutral-300"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </div>
-                      <p class="text-xs uppercase text-neutral-400 dark:text-neutral-500 tracking-widest">
-                        {item.period}
-                      </p>
-                      <h3 class="my-1 text-lg font-bold dark:text-neutral-100">
-                        {item.position}
-                      </h3>
-                      <p class="mb-1 text-sm font-medium dark:text-neutral-300">
-                        {item.company}
-                      </p>
-                      <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))
-              }
+        <div class="mt-20">
+          <h2
+            class="text-2xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-3xl mb-8"
+          >
+            Headshots
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-001-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
             </div>
-          </div>
-
-          <div class="w-[360px] ml-8">
-            <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">
-              {aboutContent.connect.title}
-            </h2>
-            <div class="py-[30px]">
-              <p
-                class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-              >
-                {aboutContent.connect.description}
-                <a
-                  href={aboutContent.connect.email.href}
-                  class="text-indigo-600 underline"
-                >
-                  {aboutContent.connect.email.text}
-                </a>
-                .
-              </p>
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-002-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-003-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-005-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-006-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <img
+                src="/assets/images/about/Caitlin-Adams-007-web-size.jpg"
+                alt="Caitlin Adams Headshot"
+                class="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>

@@ -96,18 +96,12 @@ import { siteConfig, homeContent } from "../config/content.ts";
     </style>
   </head>
   <body
-    class="min-h-screen flex flex-col bg-white dark:bg-neutral-900 transition-colors duration-300"
+    class="min-h-screen flex flex-col bg-[#f5f0eb] dark:bg-neutral-900 transition-colors duration-300"
   >
     <div class="relative flex-grow flex flex-col">
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute inset-0 dot-hexagon-light dark:dot-hexagon-dark">
-        </div>
         <div
-          class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)]"
-        >
-        </div>
-        <div
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px] dark:bg-neutral-600 dark:opacity-15"
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-5 blur-[100px] dark:bg-neutral-600 dark:opacity-15"
           style="max-height: 100vh; max-width: 100vw;"
         >
         </div>
@@ -122,7 +116,7 @@ import { siteConfig, homeContent } from "../config/content.ts";
             >
               <div class="w-[45%] text-left">
                 <h1
-                  class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl"
+                  class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl"
                 >
                   {homeContent.title}
                 </h1>
@@ -168,21 +162,14 @@ import { siteConfig, homeContent } from "../config/content.ts";
                 class="relative w-[45%] flex items-center justify-center bg-transparent overflow-hidden z-20"
               >
                 <div
-                  class="relative overflow-hidden"
-                  style="width: min(700px, 45vw); height: min(700px, 70vh); max-width: 100%; max-height: 70vh;"
+                  class="relative overflow-hidden rounded-full"
+                  style="width: min(400px, 40vw); height: min(400px, 40vw);"
                 >
                   <img
-                    src={homeContent.images.light}
-                    alt="Tech Background"
-                    class="w-full h-full object-contain animate-[float_15s_ease-in-out_infinite] hover:scale-125 transition-transform duration-300 opacity-90 dark:hidden"
-                    style="max-width: 100%; max-height: 100%;"
-                  />
-
-                  <img
-                    src={homeContent.images.dark}
-                    alt="Tech Background Dark"
-                    class="w-full h-full object-contain animate-[float_15s_ease-in-out_infinite] hover:scale-125 transition-transform duration-300 opacity-90 hidden dark:block"
-                    style="max-width: 100%; max-height: 100%;"
+                    src="/assets/images/Caitlin-Adams-004-web-size.jpg"
+                    alt="Caitlin Adams"
+                    class="w-full h-full object-cover"
+                    style="object-position: center 20%;"
                   />
                 </div>
               </div>
