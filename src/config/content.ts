@@ -101,7 +101,7 @@ export const projectsContent = {
       title: "Heartless",
       description:
         "A hyper-feminine psycholgical horror exploring the cost of perfection.",
-      image: "/assets/images/projects/heartless/heartless_icon.webp",
+      image: "/assets/images/projects/heartless/heartless_icon.jpg",
       href: "/projects/heartless/",
     },
   ],
