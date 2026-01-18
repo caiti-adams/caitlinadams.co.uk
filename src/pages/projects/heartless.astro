@@ -63,7 +63,7 @@ import Footer from "../../components/Footer.astro";
 
     <main class="flex-1 relative z-10">
       <Navigation />
-      <section class="relative z-20 max-w-4xl mx-auto mt-24 mb-12 px-7 lg:px-0">
+      <section class="relative z-20 max-w-4xl mx-auto mt-12 sm:mt-24 mb-12 px-4 sm:px-7 lg:px-0">
         <div class="relative z-20 w-full mx-auto lg:mx-0">
           <h1
             class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl lg:text-5xl"
@@ -77,8 +77,8 @@ import Footer from "../../components/Footer.astro";
           </p>
           
           <!-- Tab Navigation -->
-          <div class="mt-8 border-b border-neutral-200 dark:border-neutral-700">
-            <nav class="flex space-x-8">
+          <div class="mt-8 border-b border-neutral-200 dark:border-neutral-700 overflow-x-auto">
+            <nav class="flex space-x-4 sm:space-x-8 min-w-max">
               <button
                 class="tab-button py-4 px-1 border-b-2 font-medium text-sm transition-colors active"
                 data-tab="overview"
@@ -132,7 +132,7 @@ import Footer from "../../components/Footer.astro";
             <!-- Storyboards Tab -->
             <div class="tab-content hidden" data-tab-content="storyboards">
               <div class="max-w-none">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6">
                   <button
                     class="storyboard-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square"
                     data-img="/assets/images/projects/heartless/storyboard_1_rotated-1.webp"
@@ -170,7 +170,7 @@ import Footer from "../../components/Footer.astro";
                     />
                   </button>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
                   <button
                     class="storyboard-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square"
                     data-img="/assets/images/projects/heartless/storyboard_4_rotated-1.webp"
@@ -272,7 +272,7 @@ import Footer from "../../components/Footer.astro";
             <!-- Moodboard Tab -->
             <div class="tab-content hidden" data-tab-content="moodboard">
               <div class="max-w-none">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                   <button
                     class="moodboard-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square"
                     data-img="/assets/images/projects/heartless/Slide2.webp"
@@ -424,7 +424,7 @@ import Footer from "../../components/Footer.astro";
             <a
               href="/assets/images/projects/heartless/heartless concept.pdf"
               download
-              class="inline-flex items-center gap-2 px-6 py-3 bg-pink-400 dark:bg-pink-300 text-white dark:text-neutral-900 rounded-lg hover:bg-pink-500 dark:hover:bg-pink-400 transition-colors font-medium"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-pink-400 dark:bg-pink-300 text-white dark:text-neutral-900 rounded-lg hover:bg-pink-500 dark:hover:bg-pink-400 transition-colors font-medium w-full sm:w-auto"
             >
               <svg
                 class="w-5 h-5"
