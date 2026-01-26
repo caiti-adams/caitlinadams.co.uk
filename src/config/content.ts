@@ -12,7 +12,7 @@ export const siteConfig = {
 export const homeContent = {
   title: "Hello, I'm Caitlin Adams",
   description:
-    "A creative <em>&lt;insert noun here&gt;</em> with a passion for storytelling and film.",
+    "A creative storyteller with a passion for film.",
   buttons: {
     about: {
       text: "View About",
@@ -105,5 +105,23 @@ export const projectsContent = {
       href: "/projects/heartless/",
     },
   ],
+};
+
+export const writingContent = {
+  meta: {
+    title: "Writing - Caitlin Adams",
+    description: "Essays and creative writing",
+  },
+  title: "Writing",
+  essays: [
+    {
+      title: "Ari Aster's Use of Performance for Emotional Alignment in Midsommar (2019)",
+      description:
+        "Aster masterfully used Pugh's performance to lead the storytelling, demonstrating how acting can shape audience viewpoint and become the driver of emotional alignment within a film.",
+      image: "/assets/images/writing/essays/midsomnar/midsomnar.jfif",
+      href: "/writing/midsommar-performance/",
+    },
+  ],
+  creative: [],
 };
 

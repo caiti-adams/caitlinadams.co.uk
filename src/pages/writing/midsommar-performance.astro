@@ -1,0 +1,119 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Ari Aster's Use of Performance in Midsommar - Caitlin Adams</title>
+    <meta name="description" content="An analysis of how performance techniques create emotional connection in Midsommar." />
+    <script is:inline>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => {
+            if (localStorage.getItem("theme") === "system") {
+              if (e.matches) {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            }
+          });
+      });
+    </script>
+    <style>
+    </style>
+  </head>
+  <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"
+      >
+      </div>
+      <div
+        class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"
+      >
+      </div>
+    </div>
+
+    <main class="flex-1 relative z-10">
+      <Navigation />
+      <section class="relative z-20 max-w-4xl mx-auto mt-12 sm:mt-24 mb-12 px-4 sm:px-7 lg:px-0">
+        <div class="relative z-20 w-full mx-auto lg:mx-0">
+          <h1
+            class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl lg:text-5xl"
+          >
+            Ari Aster's Use of Performance for Emotional Alignment in Midsommar (2019)
+          </h1>
+          <p
+            class="mt-4 text-lg leading-7 text-neutral-600 dark:text-neutral-400"
+          >
+            By Caitlin Adams
+          </p>
+
+          <!-- Essay Content -->
+          <div class="prose dark:prose-invert max-w-none mt-8">
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              Ari Aster, a contemporary horror auteur, released his second feature-length film in 2019, titled <em>Midsommar</em>. The film follows Dani, played by Florence Pugh, as she struggles with the grief of losing her family, and her subsequent search for community as she follows her boyfriend to Sweden to live among the Hårga commune. Aster employs various psychological techniques, such as bright cinematography, to indoctrinate the audience alongside Dani. This essay will analyse how Aster's use of performance successfully 'brainwashed' an audience.
+            </p>
+
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mt-6">
+              The film begins with Aster rooting the horror in emotion rather than fear as Pugh's character suffers a horrific loss of her family. The audience is anchored to Dani's perspective as Pugh showcases raw grief without explanation, embodying it through naturalistic acting. She displays despair physically through posture, breathwork, and crying without dialogue. Using screaming as a form of pain expression rather than stemming from fear, her intense vulnerability emotionally ties the audience to her, and exhausts them simultaneously. Dani is left with no one but her boyfriend, Christian (Jack Reynor), to rely on. As he presents himself as emotionally distant, it becomes clear that she is isolated in her grief. This is contrasted when Pelle (Vilhelm Blomgren) offers recognition she otherwise lacks by inviting her to his home in Sweden. As emotional exhaustion is a common cult tactic (Travers, 2024), both Dani and the audience are already susceptible as she enters the commune.
+            </p>
+
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mt-6">
+              Aster relies on long takes and limited cutting, keeping the actors present in discomfort and refusing to relieve emotional tension for the audience. We witness sustained emotional moments and an emphasis on raw expression from the cast as performance dominates the frame and forces the audience to remain emotionally engaged. Although Dani is an unreliable narrator, demonstrating how grief can distort perception, we stay tied to her emotions and perceptions throughout, following her psychological deterioration alongside her. As Pelle and the rest of the commune seem to display more empathy and care than her boyfriend, we begin to justify their actions alongside Dani, allowing them to drive a wedge between her and the outside world.
+            </p>
+
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mt-6">
+              It is not just the lead cast that Aster relies on, but the supporting cast too. There is a scene of Dani breaking down, left with only the women of the commune to offer support. This is done through mirroring behaviour and a shared emotional response. They cry and scream with her, synchronise their breathing, and physically imitate her. Individual emotion becomes collective performance, and both the audience and Dani feel as though she is finally understood. As Dani finds emotional validation within the commune, the audience experiences a similar sense of release. Through Pugh's naturalistic display of emotion and sudden feeling of belonging, the audience is effectively turned against Christian. In the final scene showcasing Christian's death and Dani's welcoming into the cult, we smile alongside Pugh as we are encouraged to adopt Dani's perspective of empowerment and safety.
+            </p>
+
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mt-6">
+              In conclusion, Aster masterfully used Pugh's performance to lead the storytelling, demonstrating how acting can shape audience viewpoint and become the driver of emotional alignment within a film. Pugh's naturalistic portrayal of grief keeps the audience emotionally invested in Dani, limiting critical thinking and completing the process of emotional indoctrination.
+            </p>
+
+            <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mt-12 mb-4">References</h2>
+            
+            <ul class="text-neutral-600 dark:text-neutral-400 space-y-2">
+              <li>Aster, A. (2019). <em>Midsommar</em>. A24.</li>
+              <li>Travers, M. (2024). 3 Ways Cults 'Bait and Trap' Common People — According to a Psychologist. <em>Forbes</em>.</li>
+              <li>Tishitha. (2021). Midsommar and the "Good for Her" trope. <em>Civitas Associates</em>.</li>
+              <li>Acolytes of Horror. (2021). How Midsommar Brainwashes You. <em>YouTube</em>.</li>
+              <li>Lamb, M. (2020). The Lore of MIDSOMMAR. <em>Medium</em>.</li>
+              <li>Philip, T. (2019). How the Midsommar team made the year's most traumatic movie. <em>Culture</em>.</li>
+              <li>IMDb. (n.d.). Ari Aster</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
