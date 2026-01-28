@@ -1,0 +1,184 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Matric - Caitlin Adams</title>
+    <meta name="description" content="Visual Art - Matric by Caitlin Adams." />
+    <script is:inline>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => {
+            if (localStorage.getItem("theme") === "system") {
+              if (e.matches) {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            }
+          });
+      });
+    </script>
+  </head>
+  <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"></div>
+      <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"></div>
+    </div>
+    <main class="flex-1 relative z-10">
+      <Navigation />
+      <section class="relative z-20 max-w-4xl mx-auto mt-12 sm:mt-24 mb-12 px-4 sm:px-7 lg:px-0">
+        <div class="relative z-20 w-full mx-auto lg:mx-0">
+          <h1 class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl lg:text-5xl mb-8">Matric</h1>
+          <p class="mt-4 text-lg leading-7 text-neutral-600 dark:text-neutral-400">Visual Art by Caitlin Adams</p>
+          <div class="prose dark:prose-invert max-w-none mt-8">
+            <p>This is my final art project from my Matric year of high school, with the theme ‘nostalgia’. The project involved developing concepts through sketchbook research, before creating a final piece. My final outcome was a diptych oil painting on canvas.</p>
+            <p>This project taught me the use of lighting and colours to convey emotion and mood. Setting also played a part, as the colour palette and background composition affected the overall tone of the piece.</p>
+            <p>I took a special interest in the idea of portraying a memory through the use of a hazier and dreamlike visual style. This interest has continued into filmmaking, especially in how one can use different lenses and tricks to make the shot feel dreamier and more surreal, making it clear that it’s a memory without having to use dialogue to explain.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0001.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0001.jpg" alt="Matric 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0002.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0002.jpg" alt="Matric 2" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0003.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0003.jpg" alt="Matric 3" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0004.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0004.jpg" alt="Matric 4" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0005.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0005.jpg" alt="Matric 5" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0006.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0006.jpg" alt="Matric 6" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0007.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0007.jpg" alt="Matric 7" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0008.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0008.jpg" alt="Matric 8" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="matric-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0009.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0009.jpg" alt="Matric 9" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+            </div>
+            <!-- Matric Gallery Modal -->
+            <div id="matric-gallery-modal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+              <button id="close-matric-gallery-modal" class="absolute top-4 right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+              <button id="matric-gallery-prev-btn" class="absolute left-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+              <button id="matric-gallery-next-btn" class="absolute right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              <img id="matric-gallery-modal-img" src="" alt="Full size matric photo" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Matric Gallery modal logic
+        const matricBtns = document.querySelectorAll('.matric-img-btn');
+        const matricModal = document.getElementById('matric-gallery-modal');
+        const matricModalImg = document.getElementById('matric-gallery-modal-img');
+        const matricPrevBtn = document.getElementById('matric-gallery-prev-btn');
+        const matricNextBtn = document.getElementById('matric-gallery-next-btn');
+        let matricIndex = 0;
+        const matricImages = [
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0001.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0002.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0003.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0004.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0005.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0006.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0007.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0008.jpg',
+          '/assets/images/visual_storytelling/visual_art/matric/final matric project_page-0009.jpg',
+        ];
+        function showMatric(index) {
+          matricIndex = index;
+          matricModalImg.src = matricImages[matricIndex];
+        }
+        matricBtns.forEach((btn, index) => {
+          btn.addEventListener('click', () => {
+            showMatric(index);
+            matricModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+        matricPrevBtn.addEventListener('click', () => {
+          if (matricIndex > 0) {
+            showMatric(matricIndex - 1);
+          }
+        });
+        matricNextBtn.addEventListener('click', () => {
+          if (matricIndex < matricImages.length - 1) {
+            showMatric(matricIndex + 1);
+          }
+        });
+        document.getElementById('close-matric-gallery-modal').addEventListener('click', () => {
+          matricModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        });
+        matricModal.addEventListener('click', (e) => {
+          if (e.target === matricModal) {
+            matricModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+          }
+        });
+        document.addEventListener('keydown', (e) => {
+          if (!matricModal.classList.contains('hidden')) {
+            if (e.key === 'Escape') {
+              matricModal.classList.add('hidden');
+              document.body.style.overflow = 'auto';
+            } else if (e.key === 'ArrowLeft' && matricIndex > 0) {
+              showMatric(matricIndex - 1);
+            } else if (e.key === 'ArrowRight' && matricIndex < matricImages.length - 1) {
+              showMatric(matricIndex + 1);
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

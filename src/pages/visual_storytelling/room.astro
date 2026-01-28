@@ -1,0 +1,242 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Room - Caitlin Adams</title>
+    <meta name="description" content="Visual Art - Room by Caitlin Adams." />
+    <script is:inline>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => {
+            if (localStorage.getItem("theme") === "system") {
+              if (e.matches) {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            }
+          });
+      });
+    </script>
+  </head>
+  <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"></div>
+      <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"></div>
+    </div>
+    <main class="flex-1 relative z-10">
+      <Navigation />
+      <section class="relative z-20 max-w-4xl mx-auto mt-12 sm:mt-24 mb-12 px-4 sm:px-7 lg:px-0">
+        <div class="relative z-20 w-full mx-auto lg:mx-0">
+          <h1 class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl lg:text-5xl mb-8">Room</h1>
+          <p class="mt-4 text-lg leading-7 text-neutral-600 dark:text-neutral-400">Visual Art by Caitlin Adams</p>
+          <div class="prose dark:prose-invert max-w-none mt-8">
+            <p>This was an art project I completed in high school, with the theme ‘room’. The concept was to use our own bedroom as the subject matter in the artwork, exploring how a room can be both a physical space and an emotional environment. Rather than presenting it as only a setting, I aimed to examine how our spaces can reflect our identity, memories, and psychological state.</p>
+            <p>Throughout the work, I experimented with mixed medias, photography, and editing softwares in order to investigate how personal rooms can become extensions of those that inhabit them. The project was focused on atmosphere, layout, and detail.</p>
+            <p>It encouraged me to think about space in a cinematic way, particularly in relation to production and set design. I was able to begin to understand how environments can communicate story, mood, and character, just like dialogue or performance can.</p>
+            <p>The project overall reflects my interest in visual storytelling, and how interior spaces can be used to convey emotion within a film.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0001.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0001.jpg" alt="Room 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0002.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0002.jpg" alt="Room 2" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0003.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0003.jpg" alt="Room 3" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0004.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0004.jpg" alt="Room 4" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0005.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0005.jpg" alt="Room 5" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0006.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0006.jpg" alt="Room 6" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0007.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0007.jpg" alt="Room 7" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0008.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0008.jpg" alt="Room 8" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0009.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0009.jpg" alt="Room 9" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0010.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0010.jpg" alt="Room 10" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0011.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0011.jpg" alt="Room 11" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0012.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0012.jpg" alt="Room 12" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0013.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0013.jpg" alt="Room 13" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0014.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0014.jpg" alt="Room 14" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0015.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0015.jpg" alt="Room 15" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0016.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0016.jpg" alt="Room 16" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0017.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0017.jpg" alt="Room 17" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0018.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0018.jpg" alt="Room 18" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0019.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0019.jpg" alt="Room 19" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0020.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0020.jpg" alt="Room 20" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0021.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0021.jpg" alt="Room 21" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0022.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0022.jpg" alt="Room 22" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="room-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0023.jpg">
+                <img src="/assets/images/visual_storytelling/visual_art/room/art project - room_page-0023.jpg" alt="Room 23" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+            </div>
+            <!-- Room Gallery Modal -->
+            <div id="room-gallery-modal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+              <button id="close-room-gallery-modal" class="absolute top-4 right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+              <button id="room-gallery-prev-btn" class="absolute left-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+              <button id="room-gallery-next-btn" class="absolute right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              <img id="room-gallery-modal-img" src="" alt="Full size room photo" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Room Gallery modal logic
+        const roomBtns = document.querySelectorAll('.room-img-btn');
+        const roomModal = document.getElementById('room-gallery-modal');
+        const roomModalImg = document.getElementById('room-gallery-modal-img');
+        const roomPrevBtn = document.getElementById('room-gallery-prev-btn');
+        const roomNextBtn = document.getElementById('room-gallery-next-btn');
+        let roomIndex = 0;
+        const roomImages = [
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0001.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0002.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0003.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0004.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0005.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0006.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0007.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0008.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0009.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0010.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0011.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0012.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0013.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0014.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0015.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0016.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0017.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0018.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0019.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0020.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0021.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0022.jpg',
+          '/assets/images/visual_storytelling/visual_art/room/art project - room_page-0023.jpg',
+        ];
+        function showRoom(index) {
+          roomIndex = index;
+          roomModalImg.src = roomImages[roomIndex];
+        }
+        roomBtns.forEach((btn, index) => {
+          btn.addEventListener('click', () => {
+            showRoom(index);
+            roomModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+        roomPrevBtn.addEventListener('click', () => {
+          if (roomIndex > 0) {
+            showRoom(roomIndex - 1);
+          }
+        });
+        roomNextBtn.addEventListener('click', () => {
+          if (roomIndex < roomImages.length - 1) {
+            showRoom(roomIndex + 1);
+          }
+        });
+        document.getElementById('close-room-gallery-modal').addEventListener('click', () => {
+          roomModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        });
+        roomModal.addEventListener('click', (e) => {
+          if (e.target === roomModal) {
+            roomModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+          }
+        });
+        document.addEventListener('keydown', (e) => {
+          if (!roomModal.classList.contains('hidden')) {
+            if (e.key === 'Escape') {
+              roomModal.classList.add('hidden');
+              document.body.style.overflow = 'auto';
+            } else if (e.key === 'ArrowLeft' && roomIndex > 0) {
+              showRoom(roomIndex - 1);
+            } else if (e.key === 'ArrowRight' && roomIndex < roomImages.length - 1) {
+              showRoom(roomIndex + 1);
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

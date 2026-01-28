@@ -64,12 +64,35 @@ import Footer from "../components/Footer.astro";
     <main class="flex-1 relative z-10">
       <Navigation />
       <section class="relative z-20 w-[896px] mx-auto mt-24">
-        <div class="flex justify-center items-center min-h-[60vh]">
-          <img
-            src="/assets/images/in-preproduction.png"
-            alt="In Pre-production"
-            class="max-w-full h-auto"
-          />
+        <h2 class="text-2xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-3xl lg:text-4xl mb-8">Photography</h2>
+        <div class="mb-12 flex flex-col items-center">
+          <a href="/visual_storytelling/gallery1" class="w-[384px] bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden block hover:ring-2 hover:ring-pink-400 transition-all">
+            <img src="/assets/images/visual_storytelling/photography/gallery1/20220918_133118.jpg" alt="Gallery 1" class="w-full h-[240px] object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Gallery 1</h3>
+            </div>
+          </a>
+        </div>
+        <h2 class="text-2xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-3xl lg:text-4xl mb-8">Visual Art</h2>
+        <div class="mb-12 grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
+          <a href="/visual_storytelling/room" class="w-[384px] bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden block hover:ring-2 hover:ring-pink-400 transition-all">
+            <img src="/assets/images/visual_storytelling/visual_art/room/art%20project%20-%20room_page-0001.jpg" alt="Room" class="w-full h-[240px] object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Room</h3>
+            </div>
+          </a>
+          <a href="/visual_storytelling/matric" class="w-[384px] bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden block hover:ring-2 hover:ring-pink-400 transition-all">
+            <img src="/assets/images/visual_storytelling/visual_art/matric/final%20matric%20project_page-0001.jpg" alt="Matric" class="w-full h-[240px] object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Matric</h3>
+            </div>
+          </a>
+          <a href="/visual_storytelling/sketches" class="w-[384px] bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden block hover:ring-2 hover:ring-pink-400 transition-all">
+            <img src="/assets/images/visual_storytelling/visual_art/sketches/Art%20+%20Sketches_page-0002.jpg" alt="Sketches" class="w-full h-[240px] object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Sketches</h3>
+            </div>
+          </a>
         </div>
       </section>
     </main>

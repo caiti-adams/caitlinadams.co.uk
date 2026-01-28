@@ -98,11 +98,19 @@ export const projectsContent = {
   current: [],
   concepts: [
     {
+
       title: "Heartless",
       description:
         "A hyper-feminine psycholgical horror exploring the cost of perfection.",
       image: "/assets/images/projects/heartless/heartless_icon.jpg",
       href: "/projects/heartless/",
+    },
+    {
+      title: "Not If You Were The Last",
+      description:
+        "An apocalyptic drama exploring reconciliation as the cost of survival",
+      image: "/assets/images/projects/not_if_you_were_the_last/notif.jpg",
+      href: "/projects/not_if_you_were_the_last/",
     },
   ],
 };
@@ -122,6 +130,14 @@ export const writingContent = {
       href: "/writing/midsommar-performance/",
     },
   ],
-  creative: [],
+  creative: [
+    {
+      title: "Not If You Were The Last (Excerpt)",
+      description:
+        "An apocalyptic drama exploring reconciliation as the cost of survival",
+      image: "/assets/images/projects/not_if_you_were_the_last/notif.jpg",
+      href: "/writing/not_if_you_were_the_last_excerpt/",
+    },
+  ],
 };
 

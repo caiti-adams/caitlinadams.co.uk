@@ -1,0 +1,196 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Gallery 1 - Caitlin Adams</title>
+    <meta name="description" content="Photography Gallery 1 by Caitlin Adams." />
+    <script is:inline>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => {
+            if (localStorage.getItem("theme") === "system") {
+              if (e.matches) {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            }
+          });
+      });
+    </script>
+    <style>
+    </style>
+  </head>
+  <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"
+      >
+      </div>
+      <div
+        class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"
+      >
+      </div>
+    </div>
+
+    <main class="flex-1 relative z-10">
+      <Navigation />
+      <section class="relative z-20 max-w-4xl mx-auto mt-12 sm:mt-24 mb-12 px-4 sm:px-7 lg:px-0">
+        <div class="relative z-20 w-full mx-auto lg:mx-0">
+          <h1 class="text-3xl font-bold tracking-tight text-pink-400 dark:text-pink-300 sm:text-4xl lg:text-5xl mb-8">
+            Gallery 1
+          </h1>
+          <p class="mt-4 text-lg leading-7 text-neutral-600 dark:text-neutral-400">
+            Photography by Caitlin Adams
+          </p>
+          <div class="prose dark:prose-invert max-w-none mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0002.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0002.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0003.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0003.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0004.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0004.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0005.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0005.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0006.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0006.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0007.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0007.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0008.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0008.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0009.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0009.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+              <button class="gallery-img-btn bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer aspect-square" data-img="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0010.jpg">
+                <img src="/assets/images/visual_storytelling/photography/gallery1/Photography_page-0010.jpg" alt="Gallery 1" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </button>
+            </div>
+            <!-- Gallery Modal -->
+            <div id="gallery-modal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+              <button id="close-gallery-modal" class="absolute top-4 right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+              <button id="gallery-prev-btn" class="absolute left-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+              <button id="gallery-next-btn" class="absolute right-4 text-white hover:text-pink-400 transition-colors z-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              <img id="gallery-modal-img" src="" alt="Full size photo" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Gallery modal logic
+        const galleryBtns = document.querySelectorAll('.gallery-img-btn');
+        const galleryModal = document.getElementById('gallery-modal');
+        const galleryModalImg = document.getElementById('gallery-modal-img');
+        const galleryPrevBtn = document.getElementById('gallery-prev-btn');
+        const galleryNextBtn = document.getElementById('gallery-next-btn');
+        let galleryIndex = 0;
+        const galleryImages = [
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0002.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0003.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0004.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0005.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0006.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0007.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0008.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0009.jpg',
+          '/assets/images/visual_storytelling/photography/gallery1/Photography_page-0010.jpg',
+        ];
+        function showGallery(index) {
+          galleryIndex = index;
+          galleryModalImg.src = galleryImages[galleryIndex];
+        }
+        galleryBtns.forEach((btn, index) => {
+          btn.addEventListener('click', () => {
+            showGallery(index);
+            galleryModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+        galleryPrevBtn.addEventListener('click', () => {
+          if (galleryIndex > 0) {
+            showGallery(galleryIndex - 1);
+          }
+        });
+        galleryNextBtn.addEventListener('click', () => {
+          if (galleryIndex < galleryImages.length - 1) {
+            showGallery(galleryIndex + 1);
+          }
+        });
+        document.getElementById('close-gallery-modal').addEventListener('click', () => {
+          galleryModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        });
+        galleryModal.addEventListener('click', (e) => {
+          if (e.target === galleryModal) {
+            galleryModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+          }
+        });
+        document.addEventListener('keydown', (e) => {
+          if (!galleryModal.classList.contains('hidden')) {
+            if (e.key === 'Escape') {
+              galleryModal.classList.add('hidden');
+              document.body.style.overflow = 'auto';
+            } else if (e.key === 'ArrowLeft' && galleryIndex > 0) {
+              showGallery(galleryIndex - 1);
+            } else if (e.key === 'ArrowRight' && galleryIndex < galleryImages.length - 1) {
+              showGallery(galleryIndex + 1);
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
